@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Message">
+            <rect key="frame" x="0.0" y="0.0" width="461" height="220"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="信息框" translatesAutoresizingMaskIntoConstraints="NO" id="QqH-dx-FOC">
+                    <rect key="frame" x="0.0" y="0.0" width="461" height="220"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOb-Z5-Pso">
+                    <rect key="frame" x="167" y="174" width="127" height="26"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="重来" backgroundImage="按钮框">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickAgain:" destination="iN0-l3-epB" eventType="touchUpInside" id="NAy-2I-qVo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGZ-Oo-jO7">
+                    <rect key="frame" x="314" y="174" width="127" height="26"/>
+                    <state key="normal" title="取消" backgroundImage="按钮">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickChanel:" destination="iN0-l3-epB" eventType="touchUpInside" id="hiY-wa-VIT"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rio-lX-5Wt">
+                    <rect key="frame" x="20" y="105" width="42" height="26"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <size key="shadowOffset" width="2" height="2"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpd-Xs-RWZ">
+                    <rect key="frame" x="20" y="70" width="42" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <size key="shadowOffset" width="2" height="2"/>
+                </label>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbR-gk-4Zz">
+                    <rect key="frame" x="20" y="139" width="49" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <size key="titleShadowOffset" width="1" height="1"/>
+                    <state key="normal" title="X 1" image="分数">
+                        <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJ2-8Q-Kj9">
+                    <rect key="frame" x="20" y="174" width="127" height="26"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="放弃" backgroundImage="按钮框">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickGiveUp:" destination="iN0-l3-epB" eventType="touchUpInside" id="LjQ-C6-LtR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="fbR-gk-4Zz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="0xS-Dy-yFo"/>
+                <constraint firstItem="Rio-lX-5Wt" firstAttribute="top" secondItem="bpd-Xs-RWZ" secondAttribute="bottom" constant="8" id="157-Eu-RPu"/>
+                <constraint firstItem="bpd-Xs-RWZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="70" id="4R4-K8-Ccq"/>
+                <constraint firstItem="uGZ-Oo-jO7" firstAttribute="leading" secondItem="HOb-Z5-Pso" secondAttribute="trailing" constant="20" id="DZs-HO-g7m"/>
+                <constraint firstItem="HOb-Z5-Pso" firstAttribute="width" secondItem="uJ2-8Q-Kj9" secondAttribute="width" id="Dc1-4A-CzC"/>
+                <constraint firstAttribute="bottom" secondItem="QqH-dx-FOC" secondAttribute="bottom" id="GQ8-gB-Usk"/>
+                <constraint firstItem="HOb-Z5-Pso" firstAttribute="leading" secondItem="uJ2-8Q-Kj9" secondAttribute="trailing" constant="20" id="L1N-3E-q9W"/>
+                <constraint firstItem="HOb-Z5-Pso" firstAttribute="centerY" secondItem="uJ2-8Q-Kj9" secondAttribute="centerY" id="P7a-K3-Ln1"/>
+                <constraint firstAttribute="bottom" secondItem="uJ2-8Q-Kj9" secondAttribute="bottom" constant="20" id="P8H-ks-gMl"/>
+                <constraint firstAttribute="trailing" secondItem="uGZ-Oo-jO7" secondAttribute="trailing" constant="20" id="R0b-WS-9Cf"/>
+                <constraint firstItem="uJ2-8Q-Kj9" firstAttribute="top" secondItem="fbR-gk-4Zz" secondAttribute="bottom" constant="8" id="Syh-zt-ME7"/>
+                <constraint firstItem="QqH-dx-FOC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="V85-s6-POl"/>
+                <constraint firstItem="uGZ-Oo-jO7" firstAttribute="width" secondItem="uJ2-8Q-Kj9" secondAttribute="width" id="YOC-mC-60W"/>
+                <constraint firstItem="QqH-dx-FOC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Yqu-FX-Lab"/>
+                <constraint firstAttribute="trailing" secondItem="QqH-dx-FOC" secondAttribute="trailing" id="Z1Q-HS-JG7"/>
+                <constraint firstItem="bpd-Xs-RWZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="c06-BV-Pap"/>
+                <constraint firstItem="uJ2-8Q-Kj9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="e8W-VG-wxN"/>
+                <constraint firstItem="Rio-lX-5Wt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="jBH-Rs-YyO"/>
+                <constraint firstItem="fbR-gk-4Zz" firstAttribute="height" secondItem="bpd-Xs-RWZ" secondAttribute="height" id="mkn-J5-laW"/>
+                <constraint firstItem="uGZ-Oo-jO7" firstAttribute="height" secondItem="bpd-Xs-RWZ" secondAttribute="height" id="nQ7-sY-uap"/>
+                <constraint firstItem="uJ2-8Q-Kj9" firstAttribute="height" secondItem="bpd-Xs-RWZ" secondAttribute="height" id="tfg-VJ-a74"/>
+                <constraint firstItem="HOb-Z5-Pso" firstAttribute="height" secondItem="bpd-Xs-RWZ" secondAttribute="height" id="uCd-0I-2ci"/>
+                <constraint firstItem="Rio-lX-5Wt" firstAttribute="height" secondItem="bpd-Xs-RWZ" secondAttribute="height" id="uN7-6Q-mmt"/>
+                <constraint firstItem="uGZ-Oo-jO7" firstAttribute="centerY" secondItem="uJ2-8Q-Kj9" secondAttribute="centerY" id="w5l-Dv-yk6"/>
+                <constraint firstItem="fbR-gk-4Zz" firstAttribute="top" secondItem="Rio-lX-5Wt" secondAttribute="bottom" constant="8" id="xIk-O2-ewq"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="GQ8-gB-Usk"/>
+                    <exclude reference="V85-s6-POl"/>
+                    <exclude reference="Yqu-FX-Lab"/>
+                    <exclude reference="Z1Q-HS-JG7"/>
+                    <exclude reference="4R4-K8-Ccq"/>
+                    <exclude reference="c06-BV-Pap"/>
+                    <exclude reference="157-Eu-RPu"/>
+                    <exclude reference="jBH-Rs-YyO"/>
+                    <exclude reference="uN7-6Q-mmt"/>
+                    <exclude reference="0xS-Dy-yFo"/>
+                    <exclude reference="mkn-J5-laW"/>
+                    <exclude reference="xIk-O2-ewq"/>
+                    <exclude reference="P8H-ks-gMl"/>
+                    <exclude reference="Syh-zt-ME7"/>
+                    <exclude reference="e8W-VG-wxN"/>
+                    <exclude reference="tfg-VJ-a74"/>
+                    <exclude reference="Dc1-4A-CzC"/>
+                    <exclude reference="L1N-3E-q9W"/>
+                    <exclude reference="P7a-K3-Ln1"/>
+                    <exclude reference="uCd-0I-2ci"/>
+                    <exclude reference="DZs-HO-g7m"/>
+                    <exclude reference="R0b-WS-9Cf"/>
+                    <exclude reference="YOC-mC-60W"/>
+                    <exclude reference="nQ7-sY-uap"/>
+                    <exclude reference="w5l-Dv-yk6"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact">
+                <mask key="constraints">
+                    <include reference="GQ8-gB-Usk"/>
+                    <include reference="V85-s6-POl"/>
+                    <include reference="Yqu-FX-Lab"/>
+                    <include reference="Z1Q-HS-JG7"/>
+                    <include reference="4R4-K8-Ccq"/>
+                    <include reference="c06-BV-Pap"/>
+                    <include reference="157-Eu-RPu"/>
+                    <include reference="jBH-Rs-YyO"/>
+                    <include reference="uN7-6Q-mmt"/>
+                    <include reference="0xS-Dy-yFo"/>
+                    <include reference="mkn-J5-laW"/>
+                    <include reference="xIk-O2-ewq"/>
+                    <include reference="P8H-ks-gMl"/>
+                    <include reference="Syh-zt-ME7"/>
+                    <include reference="e8W-VG-wxN"/>
+                    <include reference="tfg-VJ-a74"/>
+                    <include reference="Dc1-4A-CzC"/>
+                    <include reference="L1N-3E-q9W"/>
+                    <include reference="P7a-K3-Ln1"/>
+                    <include reference="uCd-0I-2ci"/>
+                    <include reference="DZs-HO-g7m"/>
+                    <include reference="R0b-WS-9Cf"/>
+                    <include reference="YOC-mC-60W"/>
+                    <include reference="nQ7-sY-uap"/>
+                    <include reference="w5l-Dv-yk6"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="cancelButton" destination="uGZ-Oo-jO7" id="wVn-dg-4te"/>
+                <outlet property="reward" destination="fbR-gk-4Zz" id="trH-Xq-jtO"/>
+                <outlet property="secondLabel" destination="Rio-lX-5Wt" id="0bm-lF-gjw"/>
+                <outlet property="topLabel" destination="bpd-Xs-RWZ" id="glR-ok-R4T"/>
+            </connections>
+            <point key="canvasLocation" x="357.5" y="139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="信息框" width="150" height="100"/>
+        <image name="分数" width="25" height="25"/>
+        <image name="按钮" width="25" height="25"/>
+        <image name="按钮框" width="20" height="20"/>
+    </resources>
+</document>

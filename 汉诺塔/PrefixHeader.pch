@@ -1,0 +1,50 @@
+//
+//  PrefixHeader.pch
+//  汉诺塔
+//
+//  Created by tarena311🐟 on 16/2/23.
+//  Copyright © 2016年 tarena. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#define BOX_MAX      12  //箱子最大数量
+#define BOX_MIN      2   //箱子最小数量
+#define BOX_INTERVAL 5   //箱子之间的距离
+
+//柱子编号
+#define LEFTPILLAR   101
+#define MIDDLEPILLAR 102
+#define RIGHTPILLAR  103
+
+//盒子tag
+#define BOX_TAG 1000
+
+//难度(每一步秒数)
+#define SIMPLE  3
+#define GENERAL 2
+#define HARD    1
+
+//带参宏
+#define NUMBEROFLABEL(label已包含self) [self.label已包含self.text integerValue]
+#define NUMBEROFBUTTON(buttom) [buttom.titleLabel.text integerValue]
+#define TEXT(number) [NSString stringWithFormat:@"%ld",(long)number]
+
+//时间相关
+#define PREPARESECONDS 5   //准备秒数
+#define ADDSENCONDS    10  //道具增加秒数
+#define DECREASESCORE  1   //每用一个道具减的分数
+#endif /* PrefixHeader_pch */
+
+
+//控制台调试输出
+#ifdef DEBUG
+#define MYLog(...) NSLog(__VA_ARGS__)
+#else
+#define MYLog(...)
+#endif
